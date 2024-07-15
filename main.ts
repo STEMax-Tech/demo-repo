@@ -1,1 +1,10 @@
-
+basic.showIcon(IconNames.Heart)
+basic.pause(200)
+music.play(music.stringPlayable("- E G D B G D C ", 120), music.PlaybackMode.UntilDone)
+basic.forever(function () {
+    basic.showString("Hello!")
+    basic.pause(5000)
+    basic.showIcon(IconNames.Happy)
+    basic.pause(5000)
+    serial.writeLine("" + ("Hello".length))
+})
